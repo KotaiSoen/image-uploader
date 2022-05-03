@@ -1,0 +1,153 @@
+.main-box {
+    width: 400.36px;
+    height: 454.96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.mat-icon-good {
+    color: #219653;
+    background-color: white;
+    font-size: 40px;
+    padding-top: 39.5px;
+    padding-bottom: 23px;
+    padding-right: 20px;
+}
+
+.uploaded-successfully {
+    width: 198px;
+    height: 27px;
+    padding-bottom: 15px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: -0.035em;
+
+    /* Gray 2 */
+
+    color: #4F4F4F;
+
+
+}
+
+.image-div {
+    width: 338px;
+    height: 224.4px;
+    
+    border-radius: 12px;
+    /* background-color: green; */
+    
+}
+
+img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.link-div {
+    width: 338px;
+    height: 34px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background: #F6F8FB;
+    /* Gray 5 */
+
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+
+.link {
+    /* background-color: green; */
+    width: 100%;
+    height: 100%;
+
+}
+
+.link-text {
+    width: 255px;
+    height: 12px;
+    margin: 11px 10px 11px 7.12px;
+    border: none;
+    outline: none;
+    
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 12px;
+    /* identical to box height */
+    
+    letter-spacing: -0.035em;
+    
+    /* Gray 2 */
+    
+    color: #4F4F4F;
+}
+
+/* input:focus{
+    border: none;
+} */
+
+button {
+    width: 74px;
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+
+    /* Blue 1 */
+
+    background: #2F80ED;
+    border-radius: 8px;
+    border: none;
+} 
+
+.copy-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 12px;
+    /* identical to box height */
+
+
+    letter-spacing: -0.035em;
+    color: #FFFFFF;
+
+}
+
+.mat-icon-done {
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+

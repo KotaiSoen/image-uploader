@@ -1,0 +1,25 @@
+<div class="centered-content">
+    <div class="main-box">
+        <p class="upload-image-text">
+            Upload your image
+        </p>
+        <p class="file-type">File should be Jpeg, Png...</p>
+        <ngx-dropzone class="img-box" (change)="onSelect($event)">
+            <div *ngIf="files.length > 0">
+                <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [file]="f"></ngx-dropzone-image-preview>
+            </div>
+            <div *ngIf="files.length === 0" class="drag-drop-div">
+                <img src="assets/image.svg" alt="">
+                <p class="drag-drop">Drag & drop your image here</p>
+            </div>
+        </ngx-dropzone>
+        <p class="or">Or</p>
+        <div class="input">
+            <button>
+                <label for="image_uploads">Choose a file</label>
+            </button>
+            <input type="file" name="image" id="image_uploads" (change)="upload($event)">
+        </div>
+    </div>
+</div>
+

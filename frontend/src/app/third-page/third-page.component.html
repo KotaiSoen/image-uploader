@@ -1,0 +1,16 @@
+<div class="centered-content">
+    <div class="main-box">
+        <mat-icon class="mat-icon-good">check_circle</mat-icon>
+        <p class="uploaded-successfully">Uploaded Successfully!</p>
+        <div class="image-div">
+            <img src="{{image_url}}" alt="">
+        </div>
+        <div class="link-div">
+            <div class="link"><input type="text" class="link-text" [(ngModel)]="image_url" #inputTarget></div>
+            <button [ngxClipboard]="inputTarget" (click)="disable()">
+                <p *ngIf="!condition" class="copy-link">Copy Link</p>
+                <mat-icon *ngIf="condition" class="mat-icon-done">done</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>
