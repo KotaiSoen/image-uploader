@@ -19,6 +19,10 @@ app.use(bodyParser.urlencoded({
     extended: true
 }))
 
+//dist file
+var distDir = __dirname + "/dist";
+app.use(express.static(distDir));
+
 cloudinary.config({
     cloud_name: process.env.CLOUD_NAME,
     api_key: process.env.API_KEY,
@@ -38,7 +42,7 @@ app.post("/uploads", parser.single('file'), (req, res) => {
     res.json(image_url);
 })
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => console.log(`Server running on port ${3000}`));
 

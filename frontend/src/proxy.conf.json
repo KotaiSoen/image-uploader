@@ -1,0 +1,6 @@
+{
+    "/api": {
+      "target": "https://kotai-image-uploader-api.herokuapp.com",
+      "secure": false
+    }
+}

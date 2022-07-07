@@ -10,7 +10,7 @@ export class WebService {
   constructor(private httpClient: HttpClient) { }
 
   getData(payload: Object) {
-    return this.httpClient.post('http://localhost:3000/uploads', payload)
+    return this.httpClient.post('https://kotai-image-uploader-api.herokuapp.com/uploads', payload)
   }
   
 }
